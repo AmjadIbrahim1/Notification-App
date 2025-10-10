@@ -30,7 +30,7 @@ function App() {
       icon: <Ban />,
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, architecto fugiat repellendus suscipit minus, nobis ab odio odit officia nihil consectetur! Voluptatum ullam impedit nobis magni accusamus animi, quas omnis! Aperiam et accusamus voluptatibus non nam dolorem culpa officia cupiditate. Eveniet vero praesentium fugit dolor at consequuntur necessitatibus quisquam perferendis.",
-   "" },
+    },
     {
       id: 5,
       title: "alert-success",
