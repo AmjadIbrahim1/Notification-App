@@ -1,0 +1,43 @@
+$color-default: rgb(248, 194, 194);
+$bg-default: rgba(128, 6, 6, 0.541);
+$border-default: #800606;
+
+$color-success: rgb(203, 248, 194);
+$bg-success: rgba(6, 128, 38, 0.541);
+$border-success: #008026;
+
+$color-warning: rgb(255, 245, 204);
+$bg-warning: rgba(255, 193, 7, 0.541);
+$border-warning: #c38d00;
+
+$color-error: rgb(255, 204, 204);
+$bg-error: rgba(255, 0, 0, 0.4);
+$border-error: #b80000;
+
+$color-info: rgb(204, 238, 255);
+$bg-info: rgba(0, 123, 255, 0.4);
+$border-info: #007bff;
+
+@mixin alert($name, $borderColor, $color, $bgcolor) {
+  .#{$name} {
+    border: 2px dotted $borderColor;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: $bgcolor;
+    color: $color;
+    padding: 10px;
+
+    .alert-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+@include alert("alert-default", $border-default, $color-default, $bg-default);
+@include alert("alert-success", $border-success, $color-success, $bg-success);
+@include alert("alert-warning", $border-warning, $color-warning, $bg-warning);
+@include alert("alert-error", $border-error, $color-error, $bg-error);
+@include alert("alert-info", $border-info, $color-info, $bg-info);
