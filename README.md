@@ -1,73 +1,97 @@
-# React + TypeScript + Vite
+# 🔔 Notification App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**A React + Vite + TypeScript notification application**
 
-## React Compiler
+</div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📌 Project Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**Notification App** is a frontend application built with **React 19**, **Vite**, and **TypeScript**. It serves as a foundation for building notification-based user interfaces with fast hot-module-reloading and a modern build pipeline.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ✨ Key Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- ⚡ **Fast Development** – Vite-powered dev server with HMR
+- 🧱 **Component-Based** – React 19 with functional components and hooks
+- 🛡️ **Type Safe** – Full TypeScript support
+- 🔧 **Linting** – ESLint configured with React Hooks and Refresh plugins
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| **React 19** | UI framework |
+| **Vite 7** | Build tool & dev server |
+| **TypeScript** | Type safety |
+| **ESLint** | Code quality |
+
+---
+
+## 📁 Project Structure
+
+```
+Notification-App/
+├── src/
+│   ├── App.tsx            # Main app component
+│   ├── App.css            # App styles
+│   ├── main.tsx           # Entry point
+│   ├── index.css          # Global styles
+│   └── assets/            # Static assets
+├── index.html
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+- Node.js 18+
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/AmjadIbrahim1/Notification-App.git
+cd Notification-App
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
+
+The app runs at `http://localhost:5173`.
+
+---
+
+## 📦 Available Scripts
+
+```bash
+npm run dev      # Start dev server
+npm run build    # Type-check and build for production
+npm run lint     # ESLint
+npm run preview  # Preview production build
+```
+
+---
+
+## 👨‍💻 Author
+
+**Amjad Ibrahim**
+
+- GitHub: [AmjadIbrahim1](https://github.com/AmjadIbrahim1)
